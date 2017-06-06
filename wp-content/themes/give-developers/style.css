@@ -9,5 +9,15 @@
 */
 
 .hentry {
-    hyphens:none;
+    hyphens: none;
+}
+
+h1.post-title {
+    position: relative;
+    left: -3px;
+    text-indent: 0;
+}
+
+h2 {
+    text-indent: 0;
 }
