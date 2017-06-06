@@ -28,11 +28,11 @@
         <?php if ( get_header_image() ) : ?>style="background-image: url(<?php esc_url( header_image() ); ?>);"<?php endif ?>>
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 		<div>
-			<div class="menu-toggle">
+			<h1 class="menu-toggle">
 				<a class="icon-bars" href="#">
 					<span class="hidden"><?php _e( 'Menu', 'casper' ); ?></span>
 				</a>
-			</div>
+			</h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'casper' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
@@ -44,12 +44,13 @@
 						src="<?php echo get_stylesheet_directory_uri(); ?>/img/give-icon-full-circle.svg" class="give-icon-svg"/></a>
 		</div>
 		<div class="give-header-content">
-			<h1 class="blog-title"><a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="blog-title"><a class="blog-title" href='<?php echo esc_url( home_url( '/' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="blog-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 	</div>
 
 	<div class="give-category-list-wrap">
+	<div class="give-category-list-inner inner">
 		<span class="give-category-intro">Categories:</span>
 		<ul class="give-category-list-ul">
 			<?php
@@ -58,6 +59,7 @@
 			);
 			wp_list_categories( $args ); ?>
 		</ul>
+	</div>
 	</div>
 
 </header><!-- #masthead -->
