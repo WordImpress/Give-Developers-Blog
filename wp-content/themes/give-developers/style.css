@@ -2,8 +2,12 @@
   Theme Name:       Give Developers
   Theme URI:        https://github.com/WordImpress/Give
   Author:           Devin Walker
-  Author URI:       http://givewp.com
-  Description:      Casper Child Theme
+  Author URI:       https://givewp.com
+  Description:      Child theme for Give developer's blog.
   Version:          1.0.0
   Template:         casper
 */
+
+.hentry {
+    hyphens:none;
+}
