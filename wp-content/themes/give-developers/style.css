@@ -264,3 +264,225 @@ a.blog-title {
     }
 
 }
+
+
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade {
+    10% {
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1)
+    }
+
+    35% {
+        -webkit-transform: scale(1,1.7);
+        transform: scale(1,1.7)
+    }
+
+    40% {
+        -webkit-transform: scale(1,1.7);
+        transform: scale(1,1.7)
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    60% {
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1)
+    }
+
+    100% {
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+        opacity: 0
+    }
+}
+
+@keyframes fade {
+    10% {
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1)
+    }
+
+    35% {
+        -webkit-transform: scale(1,1.7);
+        transform: scale(1,1.7)
+    }
+
+    40% {
+        -webkit-transform: scale(1,1.7);
+        transform: scale(1,1.7)
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    60% {
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1)
+    }
+
+    100% {
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+        opacity: 0
+    }
+}
+
+[data-language] code,[class^="lang"] code,pre [data-language],pre [class^="lang"] {
+    opacity: 0;
+    -ms-filter: "alpha(opacity=100)";
+    -webkit-animation: 50ms ease-in-out 2s forwards fade-in;
+    animation: 50ms ease-in-out 2s forwards fade-in;
+}
+
+[data-language] code.rainbow,[class^="lang"] code.rainbow,pre [data-language].rainbow,pre [class^="lang"].rainbow {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s
+}
+
+[data-language] code.loading,[class^="lang"] code.loading,pre [data-language].loading,pre [class^="lang"].loading {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+pre.loading .preloader div {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    background-color: #3498db
+}
+
+pre.loading .preloader div:nth-of-type(1) {
+    -webkit-animation: fade 1.5s 300ms linear infinite;
+    animation: fade 1.5s 300ms linear infinite
+}
+
+pre.loading .preloader div:nth-of-type(2) {
+    -webkit-animation: fade 1.5s 438ms linear infinite;
+    animation: fade 1.5s 438ms linear infinite
+}
+
+pre.loading .preloader div:nth-of-type(3) {
+    -webkit-animation: fade 1.5s 577ms linear infinite;
+    animation: fade 1.5s 577ms linear infinite
+}
+
+pre.loading .preloader div:nth-of-type(4) {
+    -webkit-animation: fade 1.5s 715ms linear infinite;
+    animation: fade 1.5s 715ms linear infinite
+}
+
+pre.loading .preloader div:nth-of-type(5) {
+    -webkit-animation: fade 1.5s 853ms linear infinite;
+    animation: fade 1.5s 853ms linear infinite
+}
+
+pre.loading .preloader div:nth-of-type(6) {
+    -webkit-animation: fade 1.5s 992ms linear infinite;
+    animation: fade 1.5s 992ms linear infinite
+}
+
+pre.loading .preloader div:nth-of-type(7) {
+    -webkit-animation: fade 1.5s 1130ms linear infinite;
+    animation: fade 1.5s 1130ms linear infinite
+}
+
+pre .preloader {
+    position: absolute;
+    top: 2.25rem;
+    left: .75rem
+}
+
+pre .preloader div {
+    width: .75rem;
+    height: .75rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-right: .375rem;
+    opacity: 0;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+pre .comment {
+    color: #998;
+    color: #969896
+}
+
+pre .tag-name {
+    color: #63a35c
+}
+
+pre .css-property,pre .css-value,pre .vendor-fix,pre .support.namespace {
+    color: #333;
+    color: #0086b3
+}
+
+pre .constant,pre .constant.numeric,pre .hex-color {
+    color: #0086b3
+}
+
+pre .keyword {
+    color: #a71d5d
+}
+
+pre .entity.class {
+    color: #795da3
+}
+
+pre .entity.id,pre .entity.function {
+    color: #795da3
+}
+
+pre .function.call {
+    color: #24292e
+}
+
+pre .attribute {
+    color: #795da3
+}
+
+pre .variable {
+    color: teal;
+    color: #333
+}
+
+pre .string,pre .support.value {
+    color: #183691
+}
+
+pre .regexp {
+    color: #009926
+}
+
+.storage.function,.storage.type {
+    color: #a71d5d
+}
+
+pre .language-js .function.call {
+    color: #795da3
+}
