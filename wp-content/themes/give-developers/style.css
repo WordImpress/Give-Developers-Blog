@@ -167,6 +167,11 @@ a.blog-title {
         margin-left: 130px;
     }
 
+    .main-navigation ul li {
+        margin: 0 25px 0 0;
+    }
+
+
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -187,6 +192,11 @@ a.blog-title {
     .give-header-content {
         margin-left: 100px;
     }
+
+    .main-navigation ul li {
+        margin: 0 10px 0 0;
+    }
+
 
 }
 
@@ -209,9 +219,6 @@ a.blog-title {
         text-align: left;
     }
 
-    .main-navigation ul li {
-        margin: 0 25px 0 0;
-    }
 
     .main-navigation ul li a {
         color: #b3afae;
