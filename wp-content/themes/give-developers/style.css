@@ -22,6 +22,13 @@ h2 {
 	text-indent: 0;
 }
 
+ul, ol {
+	margin: 0 0 1.5em 0.5em;
+}
+ul > li, ol > li {
+	margin: 0 0 1em;
+}
+
 #masthead {
 	background-image: url('img/give-interior-faces.jpg');
 	background-repeat: repeat;
